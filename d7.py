@@ -30,7 +30,6 @@ def run_phases_feedback(phases):
     input_lists = [[phase] for phase in phases]
     generators = [intcode(acs.copy(), input_list) for input_list in input_lists]
 
-    # input_lists[0].append(phases[0])
     input_lists[0].append(0)
 
     i = 0
@@ -48,7 +47,7 @@ def run_phases_feedback(phases):
 if __name__ == "__main__":
     # phases = [0,1,2,3,4]
     # print(run_phases(phases))
-    # print(find_max([0, 1, 2, 3, 4], [], run_phases))
+    print(find_max([0, 1, 2, 3, 4], [], run_phases))
 
     # phases = [9,7,8,5,6]
     # print(run_phases_feedback(phases))
